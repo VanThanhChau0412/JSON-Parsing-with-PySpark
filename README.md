@@ -1,5 +1,3 @@
-# JSON-Parsing-with-PySpark
-
 # 🧩 Spark JSON Parser for Cloud Metrics
 
 **Parse, flatten, and analyze deeply nested JSON datasets from S3 using PySpark — dynamically.**
@@ -26,11 +24,15 @@ Differentiates between missing, null, and empty array data using schema inspecti
 Designed for integration with Databricks or Spark environments reading from S3 (`dbutils.fs.ls` + `spark.read.json`).
 
 ---
-☁️ Running on Databricks
-This project is built to run natively on Databricks, leveraging its pre-configured Spark session, optimized cluster environment, and direct S3 integration.
-By executing within Databricks notebooks, you can immediately access the spark session and dbutils utilities — eliminating the need for manual Spark initialization or AWS authentication setup.
+
+## ☁️ Running on Databricks
+
+This project is built to run **natively on Databricks**, leveraging its **pre-configured Spark session**, optimized **cluster environment**, and direct **S3 integration**.
+By executing within Databricks notebooks, you can immediately access the `spark` session and `dbutils` utilities — eliminating the need for manual Spark initialization or AWS authentication setup.
 This makes it ideal for production pipelines and large-scale exploratory analysis of cloud telemetry or configuration data stored in JSON format.
+
 ---
+
 ## 🧠 How It Works
 
 The project has three main components:
@@ -119,7 +121,7 @@ print(result)
 
 * **Python 3.8+**
 * **Apache Spark 3.x**
-* **Databricks (optional)**
+* **Databricks Runtime environment (recommended)**
 * Access to **S3** or compatible storage
 
 ---
